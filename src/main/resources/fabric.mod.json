@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "diet",
+  "version": "${version}",
+
+  "name": "Diet Mod",
+  "description": "This is an fabric Mod for diet.",
+  "authors": [
+    "miaoyandaoren"
+  ],
+  "contact": {
+    "sources": "https://github.com/miaoyandaoren/Diet_fabric"
+  },
+
+  "license": "MIT",
+  "icon": "assets/diet/diet_icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mydr.diet.diet"
+    ],
+    "client": [
+      "net.mydr.diet.DietClientMod"
+    ],
+    "fabric-datagen": [
+      "net.mydr.diet.datagen.DataGeneration"
+    ],
+    "cardinal-components": [
+      "net.mydr.diet.world.test.MyComponents"
+    ]
+  },
+  "mixins": [
+    "diet.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "custom": {
+    "cardinal-components": [
+      "diet:diet1",
+      "diet:diet2",
+      "diet:diet3",
+      "diet:diet4",
+      "diet:diet5"
+    ]
+  }
+}
